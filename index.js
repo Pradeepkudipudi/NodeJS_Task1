@@ -34,7 +34,10 @@ let fs = require("fs")
 
 //  deletion
 
-fs.unlink("./Index24r.js",(err)=>{
+
+let arr = ["Index122.js","Index23r.js","Index24r.js"]
+arr.forEach((arr)=>{
+fs.unlink(`${arr}`,(err)=>{
     if(err){
         console.log(err);
         
@@ -42,6 +45,7 @@ fs.unlink("./Index24r.js",(err)=>{
         console.log("deleted");
         
     }
+})
 })
 
 
